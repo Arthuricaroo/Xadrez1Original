@@ -50,13 +50,13 @@ partial class Form1
                 for(int Y = 0; Y < 8; Y++){
                         int i = X; int j = Y;
                         if (i % 2 == 0 ^ j % 2 == 0){
-                                tabuleiro[i, j] = new CasaVazia( i*50, j*50, "casaVaziacinza.png", Enumcor.vazio);
+                                tabuleiro[i, j] = new CasaVazia( i*50, j*50, "casaVaziabranco.png", Enumcor.vazio);
                                 this.Controls.Add(tabuleiro[i,j].pictureBox);
                                 tabuleiro[i,j].pictureBox.BringToFront();
                                 tabuleiro[i,j].pictureBox.Click += (sender,args) => {cliqueNoTabuleiro(tabuleiro[i,j]);};
                         }
                         else{
-                                tabuleiro[i, j] = new CasaVazia( i*50, j*50, "casaVaziaazul.png", Enumcor.vazio);
+                                tabuleiro[i, j] = new CasaVazia( i*50, j*50, "casaVaziaverde.png", Enumcor.vazio);
                                 this.Controls.Add(tabuleiro[i,j].pictureBox);
                                 tabuleiro[i,j].pictureBox.BringToFront();
                                 tabuleiro[i,j].pictureBox.Click += (sender,args) => {cliqueNoTabuleiro(tabuleiro[i,j]);};
